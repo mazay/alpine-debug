@@ -1,22 +1,14 @@
 name: Build
 
-env:
-  GO_VERSION: 1.16
-  ATTACHMENTS: ""
-  GOPATH: ${{ github.workspace }}
-
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      - name: Inject slug/short variables
-        uses: rlespinasse/github-slug-action@v3.x
-
       - name: Chechout
         uses: actions/checkout@v2
         with:
