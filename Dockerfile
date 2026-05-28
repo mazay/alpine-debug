@@ -12,4 +12,6 @@ RUN apk --no-cache add ca-certificates \
     mtr \
     netcat-openbsd \
     nmap \
-    bind-tools
+    bind-tools \
+    jq \
+    yq
