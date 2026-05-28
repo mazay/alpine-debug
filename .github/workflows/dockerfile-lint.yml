@@ -1,0 +1,14 @@
+name: hadolint
+
+on:
+  pull_request:
+
+jobs:
+  hadolint:
+    name: hadolint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: hadolint/hadolint-action@v3.3.0
+        with:
+          dockerfile: Dockerfile
