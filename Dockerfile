@@ -11,4 +11,5 @@ RUN apk --no-cache add ca-certificates \
     tcptraceroute \
     mtr \
     netcat-openbsd \
+    nmap \
     bind-tools
